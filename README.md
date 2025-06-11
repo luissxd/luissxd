@@ -28,7 +28,7 @@
 
 ## 🖼️ Prototipos UI
 
-Los prototipos de todas las pantallas fueron diseñados con [NOMBRE DE LA PLATAFORMA].
+Los prototipos de todas las pantallas fueron diseñados con [excalidraw].
 
 🔗 [Ver prototipos aquí](https://github.com/luissxd/luissxd/blob/main/UI%20imagen/Prototipo.jpeg) 
 
