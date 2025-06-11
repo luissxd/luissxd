@@ -1,1 +1,132 @@
+-- Crear la base de datos
+CREATE DATABASE HabitFlow;
+GO
+
+-- Usar la base de datos
+USE HabitFlow;
+GO
+
+-- Tabla Rol
+CREATE TABLE Rol (
+    id_rol INT PRIMARY KEY IDENTITY(1,1),
+    nombre VARCHAR(250) UNIQUE,
+    fecha_creacion DATETIME DEFAULT GETDATE(),
+    estado_auditoria BIT DEFAULT 1
+);
+GO
+
+-- Tabla Usuario
+CREATE TABLE Usuario (
+    id_usuario INT PRIMARY KEY IDENTITY(1,1),
+    id_rol INT,
+    nombre VARCHAR(250),
+    apellido_paterno VARCHAR(250),
+    apellido_materno VARCHAR(250),
+    correo VARCHAR(100) UNIQUE,
+    contrasena VARCHAR(250),
+    fecha_nacimiento DATE, 
+    foto_perfil VARCHAR(1000),
+    fecha_creacion DATETIME DEFAULT GETDATE(),
+    estado_auditoria BIT DEFAULT 1,
+    CONSTRAINT FK_Usuario_Rol FOREIGN KEY (id_rol) REFERENCES Rol(id_rol)
+);
+GO
+
+-- Tabla Categoria
+CREATE TABLE Categoria (
+    id_categoria INT PRIMARY KEY IDENTITY(1,1),
+    nombre VARCHAR(250),
+    fecha_creacion DATETIME DEFAULT GETDATE(),
+    estado_auditoria BIT DEFAULT 1
+);
+GO
+
+-- Tabla Habito
+CREATE TABLE Habito (
+    id_habito INT PRIMARY KEY IDENTITY(1,1),
+    id_usuario INT,
+    id_categoria INT,
+    nombre VARCHAR(250),
+    descripcion VARCHAR(250),
+    hora_sugerida TIME,
+    fecha_creacion DATETIME DEFAULT GETDATE(),
+    estado_auditoria BIT DEFAULT 1,
+    CONSTRAINT FK_Habito_Usuario FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
+    CONSTRAINT FK_Habito_Categoria FOREIGN KEY (id_categoria) REFERENCES Categoria(id_categoria)
+);
+GO
+
+-- Tabla FrecuenciaHabito
+CREATE TABLE FrecuenciaHabito (
+    id_frecuencia INT PRIMARY KEY IDENTITY(1,1),
+    id_habito INT,
+    dia_semana VARCHAR(20) CHECK (dia_semana IN ('Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado', 'Domingo')),
+    fecha_creacion DATETIME DEFAULT GETDATE(),
+    estado_auditoria BIT DEFAULT 1,
+    CONSTRAINT FK_FrecuenciaHabito_Habito FOREIGN KEY (id_habito) REFERENCES Habito(id_habito)
+);
+GO
+
+-- Tabla Seguimiento
+CREATE TABLE Seguimiento (
+    id_seguimiento INT PRIMARY KEY IDENTITY(1,1),
+    id_habito INT,
+    fecha DATE,
+    completado BIT,
+    nota_dia VARCHAR(250),
+    fecha_registro DATE,
+    fecha_creacion DATETIME DEFAULT GETDATE(),
+    estado_auditoria BIT DEFAULT 1,
+    CONSTRAINT FK_Seguimiento_Habito FOREIGN KEY (id_habito) REFERENCES Habito(id_habito)
+);
+GO
+
+-- Tabla Insignia
+CREATE TABLE Insignia (
+    id_insignia INT PRIMARY KEY IDENTITY(1,1),
+    nombre VARCHAR(250),
+    descripcion VARCHAR(250),
+    criterio_asignacion VARCHAR(250),
+    icono_url VARCHAR(1000),
+    fecha_creacion DATETIME DEFAULT GETDATE(),
+    estado_auditoria BIT DEFAULT 1
+);
+GO
+
+-- Tabla HabitoInsignia
+CREATE TABLE HabitoInsignia (
+    id_habitoInsignia INT PRIMARY KEY IDENTITY(1,1),
+    id_usuario INT,
+    id_habito INT,
+    id_insignia INT,
+    fecha_obtenida DATE,
+    fecha_creacion DATETIME DEFAULT GETDATE(),
+    estado_auditoria BIT DEFAULT 1,
+    CONSTRAINT FK_HabitoInsignia_Usuario FOREIGN KEY (id_usuario) REFERENCES Usuario(id_usuario),
+    CONSTRAINT FK_HabitoInsignia_Habito FOREIGN KEY (id_habito) REFERENCES Habito(id_habito),
+    CONSTRAINT FK_HabitoInsignia_Insignia FOREIGN KEY (id_insignia) REFERENCES Insignia(id_insignia)
+);
+GO
+
+-- Tabla Recordatorio
+CREATE TABLE Recordatorio (
+    id_recordatorio INT PRIMARY KEY IDENTITY(1,1),
+    id_habito INT,
+    hora TIME NOT NULL,
+    mensaje VARCHAR(250),
+    fecha_creacion DATETIME DEFAULT GETDATE(),
+    estado_auditoria BIT DEFAULT 1,
+    CONSTRAINT FK_Recordatorio_Habito FOREIGN KEY (id_habito) REFERENCES Habito(id_habito)
+);
+GO
+
+-- Tabla FraseMotivacional
+CREATE TABLE FraseMotivacional (
+    id_frase INT PRIMARY KEY IDENTITY(1,1),
+    frase VARCHAR(1000) NOT NULL,
+    autor VARCHAR(200),
+    fecha_creacion DATETIME DEFAULT GETDATE(),
+    estado_auditoria BIT DEFAULT 1
+);
+GO
 
