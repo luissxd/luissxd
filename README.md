@@ -85,7 +85,7 @@ Incluye:
 - Android Studio
 
 ### Backend
-- [LENGUAJE]
+- Node.js
 - Base de datos SQL Server
 - Documentado con Postman
 
