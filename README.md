@@ -116,12 +116,19 @@ Incluye:
 
 HabitFlow/
 ├── app/
+
 │ ├── java/
+
 │ │ └── com.example.habitflow/
+
 │ ├── res/
+
 │ │ ├── layout/
+
 │ │ └── values/
+
 ├── README.md
+
 └── ...
 
 
