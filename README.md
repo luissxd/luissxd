@@ -1,16 +1,135 @@
-## Hi there 👋
+# 📱 HabitFlow
 
-<!--
-**luissxd/luissxd** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+**Aplicación de hábitos para construir una vida más organizada y saludable.**
 
-Here are some ideas to get you started:
+> Proyecto del curso de Aplicaciones Móviles – Android Studio (Java)  
+> Fecha de entrega: 12 de junio de 2025
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## 👨‍👩‍👧‍👦 Integrantes del equipo
+
+| Nombre Completo       | Participación    |
+|-----------------------|------------------|
+| Anthony Gutierrez     | ✅ Participó     |
+| Cristian Albarracin   | ✅ Participó     |
+| David Allcca          | ✅ Participó     |
+| Jose Guerrero         | ✅ Participó     |
+| Luis Aguirre          | ✅ Participó     |
+
+
+---
+
+## 🧩 Descripción general
+
+**HabitFlow** es una aplicación móvil desarrollada en **Java con Android Studio** que ayuda al usuario a crear, seguir y mantener hábitos saludables mediante recordatorios, seguimiento diario, motivación y visualización de estadísticas.
+
+---
+
+## 🖼️ Prototipos UI
+
+Los prototipos de todas las pantallas fueron diseñados con [NOMBRE DE LA PLATAFORMA].
+
+🔗 [Ver prototipos aquí](https://link-a-los-prototipos.com) <!-- PENDIENTE LINK -->
+
+---
+
+## 🗃️ Diseño de la Base de Datos
+
+La app se conecta con un backend que gestiona la base de datos relacional robusta. Las entidades principales incluyen:
+
+- Rol
+- Usuario
+- Categoría
+- Hábito
+- Frecuencia del Hábito
+- Seguimiento
+- Insignias
+- Asignación de Insignias por Hábito
+- Recordatorios
+- Frases motivacionales
+
+📌 **SQL Completo:** [Ver diseño de base de datos aquí](#)  
+(Si desean pueden hacer un archivo `.sql` aparte o pegar el bloque completo en otra sección del repo)
+
+---
+
+## 🔗 Enlace al repositorio del backend
+
+👉 [Ver backend aquí](https://github.com/usuario/backend-habitflow) <!-- PENDIENTE LINK -->
+
+Incluye:
+- Endpoint para listar hábitos
+- Endpoint para registrar un nuevo hábito
+- Documentación de Postman
+
+---
+
+## 📱 Interfaces desarrolladas
+
+| Pantalla                | Descripción                                               |
+|-------------------------|-----------------------------------------------------------|
+| Pantalla de Inicio      | Muestra hábitos del día + frase motivacional              |
+| Crear / Editar Hábito   | Formulario con frecuencia, hora sugerida, etc.            |
+| Estadísticas            | Gráficos, progreso, rachas y medallas desbloqueadas       |
+| Historial               | Cumplimiento por día, opción para dejar notas             |
+
+✅ **1 de ellas está conectada con el backend.**
+
+---
+
+## ⚙️ Tecnologías utilizadas
+
+### Android App
+- Java
+- Android Studio
+
+### Backend
+- [LENGUAJE]
+- Base de datos SQL Server
+- Documentado con Postman
+
+---
+
+## 🧪 Estado del proyecto
+
+✅ Backend funcional  
+✅ Diseño de base de datos completo  
+✅ 4 interfaces implementadas (1 conectada al backend)  
+✅ Endpoints `listar` y `guardar` funcionales  
+🚧 README del backend en progreso  
+🚧 Documentación en Postman enlazada
+
+---
+
+## 🚀 Cómo ejecutar el proyecto (App móvil)
+
+1. Clonar este repositorio
+2. Abrir en Android Studio
+3. Conectar un emulador o dispositivo físico
+4. Ejecutar el proyecto (`Run > Run 'app'`)
+5. Probar funcionalidades básicas de hábitos
+
+---
+
+## 📂 Estructura del proyecto
+
+HabitFlow/
+├── app/
+│ ├── java/
+│ │ └── com.example.habitflow/
+│ ├── res/
+│ │ ├── layout/
+│ │ └── values/
+├── README.md
+└── ...
+
+
+---
+
+## 📋 Licencia
+
+Este proyecto es de uso académico. Cualquier uso externo debe contar con permiso de los integrantes del grupo 2.
+
+---
+
