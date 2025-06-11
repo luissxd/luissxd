@@ -30,7 +30,7 @@
 
 Los prototipos de todas las pantallas fueron diseñados con [NOMBRE DE LA PLATAFORMA].
 
-🔗 [Ver prototipos aquí](https://link-a-los-prototipos.com) <!-- PENDIENTE LINK -->
+🔗 [Ver prototipos aquí](https://github.com/luissxd/luissxd/blob/main/UI%20imagen/Prototipo.jpeg) 
 
 ---
 
@@ -49,7 +49,7 @@ La app se conecta con un backend que gestiona la base de datos relacional robust
 - Recordatorios
 - Frases motivacionales
 
-📌 **SQL Completo:** [Ver diseño de base de datos aquí](#)  
+📌 **SQL Completo:** [Ver diseño de base de datos aquí](https://github.com/luissxd/luissxd/blob/main/BD/HabitFlow_BD)  
 (Si desean pueden hacer un archivo `.sql` aparte o pegar el bloque completo en otra sección del repo)
 
 ---
