@@ -15,22 +15,22 @@ Este es el repositorio del backend para la aplicación **HabitFlow**, diseñada 
 
 src/
 # Configuración de la base de datos
-├── config/ 
+# ├── config/ 
 
 # Lógica de los endpoints (CRUD)
-├── controllers/ 
+# ├── controllers/ 
 
 # Entidades que representan las tablas
-├── entities/ 
+# ├── entities/ 
 
 # Definición de rutas
-├── routes/ 
+# ├── routes/ 
 
 # Configuración general del app
-├── app.ts 
+# ├── app.ts 
 
 # Punto de entrada
-└── server.ts 
+# └── server.ts 
 
 
 ## 🌐 Endpoints disponibles
