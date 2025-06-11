@@ -50,8 +50,7 @@ La app se conecta con un backend que gestiona la base de datos relacional robust
 - Frases motivacionales
 
 📌 **SQL Completo:** [Ver entidades (Script)](https://github.com/luissxd/luissxd/blob/main/BD/HabitFlow_BD)  
-                      [Ver diseño de base de datos aquí](https://github.com/luissxd/luissxd/blob/main/BD/HabitFlow_BD)  
-(Si desean pueden hacer un archivo `.sql` aparte o pegar el bloque completo en otra sección del repo)
+[Ver diseño de base de datos aquí](https://github.com/luissxd/luissxd/blob/main/BD/Diagrama_HabitFlow.png) 
 
 ---
 
