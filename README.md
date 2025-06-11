@@ -115,6 +115,7 @@ Incluye:
 ## 📂 Estructura del proyecto
 
 HabitFlow/
+
 ├── app/
 
 │ ├── java/
