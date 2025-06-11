@@ -3,7 +3,7 @@
 **Aplicación de hábitos para construir una vida más organizada y saludable.**
 
 > Proyecto del curso de Aplicaciones Móviles – Android Studio (Java)  
-> Fecha de entrega: 12 de junio de 2025
+> Fecha de exposición: 12 de junio de 2025
 
 ---
 
