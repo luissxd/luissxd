@@ -58,13 +58,12 @@ El backend incluye al menos 2 endpoints funcionales por entidad:
 
 ## 📬 Documentación Postman
 
-🔗 [Ver colección en Postman](https://www.postman.com/)  
-*(PENDIENTE LINK POSTMAN)*
+🔗 [Ver colección en Postman](https://documenter.getpostman.com/view/39755379/2sB2x5JDJf)  
 
 ## 🔗 Repositorios del Proyecto
 
-- 🔙 Backend: [LINK BACKEND](https://github.com/luissxd/back-habitos-main)
-- 📱 Frontend (Android): [LINK ANDROID STUDIO](https://github.com/luissxd/HabitFlow)
+- 🔙 Backend: [LINK](https://github.com/DavidAtma/back-habitos)
+- 📱 Frontend (Android): [LINK](https://github.com/DavidAtma/back-habitos)
 
 ---
 
