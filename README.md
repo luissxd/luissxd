@@ -56,7 +56,7 @@ La app se conecta con un backend que gestiona la base de datos relacional robust
 
 ## 🔗 Enlace al repositorio del backend
 
-👉 [Ver backend aquí](https://github.com/usuario/backend-habitflow) <!-- PENDIENTE LINK -->
+👉 Backend: [LINK](https://github.com/DavidAtma/back-habitos)
 
 Incluye:
 - Endpoint para listar hábitos
@@ -97,8 +97,8 @@ Incluye:
 ✅ Diseño de base de datos completo  
 ✅ 4 interfaces implementadas (1 conectada al backend)  
 ✅ Endpoints `listar` y `guardar` funcionales  
-🚧 README del backend en progreso  
-🚧 Documentación en Postman enlazada
+✅ README del backend en progreso  
+✅ Documentación en Postman enlazada
 
 ---
 
