@@ -138,19 +138,9 @@ git clone https://github.com/DavidAtma/FrontWebMisHabitos.git
 
 ---
 
-## 📋 Documentación adicional
+## 💡 Mejoras futuras
 
-- **Postman Collection:** Documentación completa de la API REST disponible en el README del backend.
-- **Diagrama de base de datos:** Disponible en el repositorio de backend o en el README del frontend.
-
----
-
-## 💡 Mejoras futuras (opcional)
-
-- Implementar alertas visuales con librerías como SweetAlert.
-- Validaciones más robustas en frontend.
 - Diseño más responsive.
-- Deploy en GitHub Pages o Netlify.
 
 ---
 
