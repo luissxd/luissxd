@@ -138,13 +138,6 @@ git clone https://github.com/DavidAtma/FrontWebMisHabitos.git
 
 ---
 
-## 🔗 Repositorio del Backend (PENDIENTE REEMPLAZAR LINK)
-
-👉 [Ver Backend HabitFlow](https://github.com//backend)  
-*(Reemplazar con tu enlace real del backend)*
-
----
-
 ## 📋 Documentación adicional
 
 - **Postman Collection:** Documentación completa de la API REST disponible en el README del backend.
@@ -161,7 +154,7 @@ git clone https://github.com/DavidAtma/FrontWebMisHabitos.git
 
 ---
 
-## 📄 Licencia
+# 📄 Licencia
 
 Este proyecto es de uso académico y no está disponible para distribución comercial.
 
