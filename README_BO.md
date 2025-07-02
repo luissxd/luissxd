@@ -144,7 +144,7 @@ git clone https://github.com/DavidAtma/FrontWebMisHabitos.git
 
 ---
 
-### 📄 Licencia
+## 📄 Licencia
 
 Este proyecto es de uso académico y no está disponible para distribución comercial.
 
